@@ -54,7 +54,7 @@ function Billing({ user, setUser }) {
                 key: import.meta.env.VITE_RAZORPAY_KEY_ID,
                 amount: result.data.order.amount,
                 currency: result.data.order.currency,
-                name: "FresherAI",
+                name: "Mirror interview",
                 description: `${plan.title} - ${plan.coins} Interview Coins`,
                 order_id: result.data.order.id,
 

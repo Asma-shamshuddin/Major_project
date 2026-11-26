@@ -134,7 +134,7 @@ function LoginModel({ onClose, setUser }) {
 
                     <h2 className='text-lg font-bold text-center mb-2 text-purple-950'>
                         Sign In to {" "}
-                        <span className='font-extrabold text-lg tracking-tight text-purple-700'>FresherAI</span>
+                        <span className='font-extrabold text-lg tracking-tight text-purple-700'>Mirror Interview</span>
                     </h2>
                     <p className='text-purple-600/80 text-center text-xs'>
                         Continue your AI interview journey
