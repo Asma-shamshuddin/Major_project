@@ -50,11 +50,17 @@ function Billing({ user, setUser }) {
             const result = await api.post("/api/billing/create",
                 { planId: plan.title.toLowerCase() })
 
+const razorpayKey = import.meta.env.VITE_RAZORPAY_KEY_ID;
+
+if (!razorpayKey) {
+    throw new Error("Razorpay Key ID is missing from frontend .env");
+}
+
             const options = {
-                key: import.meta.env.VITE_RAZORPAY_KEY_ID,
+                key: razorpayKey,
                 amount: result.data.order.amount,
                 currency: result.data.order.currency,
-                name: "FresherAI",
+                name: "Mirror Interview",
                 description: `${plan.title} - ${plan.coins} Interview Coins`,
                 order_id: result.data.order.id,
 
