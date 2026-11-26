@@ -4,7 +4,7 @@ import { GiArtificialHive } from "react-icons/gi";
 import { FaArrowRight } from "react-icons/fa6";
 import LoginModel from '../components/LoginModel';
 import { useState } from 'react';
-import dashboard from "../assets/image.png"
+//import dashboard from "../assets/image.png"
 import { FiMic, FiFileText, FiBarChart2, FiMap } from "react-icons/fi";
 
 function Home({ setUser }) {
@@ -71,7 +71,7 @@ function Home({ setUser }) {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.55, delay: 0.2 }}
                         className='text-purple-600 text-sm leading-relaxed max-w-md mx-auto mb-6'>
-                        Fresher.AI is an innovative AI-powered interview preparation platform
+                        Mirror Interview is an innovative AI-powered interview preparation platform
                         designed to help job seekers excel in their interviews.
                     </motion.p>
 
@@ -98,7 +98,7 @@ function Home({ setUser }) {
                     transition={{ duration: 0.7, delay: 0.3 }}
                     className='mt-10 rounded-lg overflow-hidden shadow-[0_0_60px_rgba(139,92,246,0.12)] max-w-2xl mx-auto'>
 
-                    <img src={dashboard} alt='dashboard img' className='w-full h-auto object-cover block' />
+                    {/* <img src={dashboard} alt='dashboard img' className='w-full h-auto object-cover block' /> */}
 
                 </motion.div>
 
@@ -121,7 +121,7 @@ function Home({ setUser }) {
                         </h2>
 
                         <p className='text-purple-600 text-sm max-w-2xl mx-auto mt-4 leading-relaxed'>
-                            Fresher.AI combines multiple AI agents that work together
+                            Mirror Interview combines multiple AI agents that work together
                             to help you build your resume, practice interviews,
                             receive detailed feedback, and follow a personalized roadmap
                             to land your dream job.
@@ -194,11 +194,11 @@ function Home({ setUser }) {
                         <GiArtificialHive size={11} color='white' />
                     </div>
 
-                    <span className='font-bold text-xs text-purple-700'>FresherAI</span>
+                    <span className='font-bold text-xs text-purple-700'>Mirror Interview</span>
                 </div>
 
                 <div className='text-purple-500 text-xs'>
-                    © {new Date().getFullYear()} Fresher.AI · All rights reserved
+                    © {new Date().getFullYear()} Mirror Iterview · All rights reserved
                 </div>
             </footer>
 

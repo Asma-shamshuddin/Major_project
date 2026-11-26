@@ -53,7 +53,7 @@ function Dashboard({ user, setUser }) {
   }
 
   return (
-    <div className='bg-purple-50 min-h-screen text-purple-950 font-sans flex'>
+    <div className='bg-purple-50 min-h-screen text-purple-50 font-sans flex'>
       <Sidebar
         user={user}
         onNewInterview={() => navigate("/interview")}

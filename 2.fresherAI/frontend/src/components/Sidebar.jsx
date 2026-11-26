@@ -81,7 +81,7 @@ function Sidebar({
                     onClick={onNewInterview}
                     whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.97 }}
-                    className={`w-full flex items-center gap-2 bg-purple-600 text-white font-semibold rounded-lg py-2 transition-all shadow-[0_4px_14px_rgba(0,0,0,0.25)] cursor-pointer hover:bg-purple-500 ${sidebarOpen ? "px-2.5 " : "justify-center px-0"
+                    className={`w-full flex items-center gap-2 bg-purple-500 text-white font-semibold rounded-lg py-2 transition-all shadow-[0_4px_14px_rgba(0,0,0,0.25)] cursor-pointer hover:bg-purple-400 ${sidebarOpen ? "px-2.5 " : "justify-center px-0"
                         }`}>
                     <FiPlus size={14} className='shrink-0' />
                     <AnimatePresence>
@@ -145,7 +145,7 @@ function Sidebar({
                             exit={{ opacity: 0 }}
                             transition={{ duration: 0.13 }}
                             onClick={() => navigate("/billing")}
-                            className='group flex cursor-pointer items-center justify-between gap-2.5 rounded-lg border border-white/10 bg-purple-600 backdrop-blur-2xl px-2.5 py-1.5 mb-2.5 transition-all hover:border-white/20 shadow-[0_8px_24px_rgba(0,0,0,0.2)]'>
+                            className='group flex cursor-pointer items-center justify-between gap-2.5 rounded-lg border border-white/10 bg-purple-500 backdrop-blur-2xl px-2.5 py-1.5 mb-2.5 transition-all hover:border-white/20 shadow-[0_8px_24px_rgba(0,0,0,0.2)]'>
                             <div className='flex items-center gap-1.5'>
                                 <GiTwoCoins size={15} className='text-yellow-500 shrink-0' />
 

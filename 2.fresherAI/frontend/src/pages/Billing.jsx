@@ -60,7 +60,9 @@ if (!razorpayKey) {
                 key: razorpayKey,
                 amount: result.data.order.amount,
                 currency: result.data.order.currency,
+
                 name: "Mirror Interview",
+
                 description: `${plan.title} - ${plan.coins} Interview Coins`,
                 order_id: result.data.order.id,
 
